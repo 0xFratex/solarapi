@@ -1,0 +1,12 @@
+{
+  "name": "puter-vercel-api",
+  "version": "1.0.0",
+  "description": "A REST API hosted on Vercel to handle Puter.js AI responses.",
+  "main": "api/ai-response.js",
+  "scripts": {
+    "start": "node api/ai-response.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
