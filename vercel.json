@@ -2,22 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/ai-response.js",
+      "src": "api/chat/completions.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "public/*",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/api/ai-response",
-      "dest": "/api/ai-response.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
+      "src": "/chat/completions",
+      "dest": "/api/chat/completions.js"
     }
   ]
 }
